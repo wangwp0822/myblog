@@ -63,7 +63,7 @@ Article.get = function (username, callback) {
 };
 
 //获取单个用户
-Article.get = function (username, callback) {
+Article.getOne = function (username, callback) {
     articleModel.findAndModify({username: username}, function (err, article) {
         if (err) {
             return callback(err);
